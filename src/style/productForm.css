@@ -1,0 +1,70 @@
+/*colors:
+.color1 {color: #11333c;}
+.color2 {color: #0e5761;}
+.color3 {color: #0a8991;}
+.color4 {color: #05ccce;}
+.color5 {color: #39fff7;}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+.input{
+    background-color: #0e171b ;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #ff0f43 ;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-size: 16px;
+}
+.boton{
+    background-color: transparent;
+    border: none;
+    
+}
+.icono{
+    width: 30px;
+    height: 30px;
+    color: #ff0f43;
+    cursor: pointer;
+}
+.icono:hover{
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes colores {
+    0%{
+        color: #ff0f43;
+    }
+    50%{
+        color: #fff;
+    }
+    100%{
+        color: #ff0f43;
+    }
+}

@@ -1,0 +1,90 @@
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;    
+}
+.product{
+    min-height: 300px; 
+    width: 300px;
+    display: block;
+    background-color: #11333c;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;    
+    border-radius: 16px;
+    color: #fff;
+}
+
+
+.nombre{
+    font-family: 'roboto', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #ff0f43;
+}
+
+.info{
+    font-size: 20px;
+    margin: 20px;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.defaultTitle{
+    color: #fff;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    margin-top: 50px;
+
+}
+.action{
+    background-color: transparent;
+    border: none;
+    
+}
+.buttonscontainer{
+    grid-column:  span 1/ 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonAction{
+    width: 30px;
+    height: 20px;
+    color: #ff0f43;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.buttonAction:hover{
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes colores {
+    0%{
+        color: #ff0f43;
+    }
+    50%{
+        color: #fff;
+    }
+    100%{
+        color: #ff0f43;
+    }
+}
+
+@media(max-width: 682px){
+    .product{
+        width: 600px;
+    }
+    .info{
+        font-size: 15px;
+    }
+    .nombre{
+        font-size: 20px;
+    }
+}
